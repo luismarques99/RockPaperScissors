@@ -1,5 +1,5 @@
 body {
-  background: #e0e0e0;
+  background: #616161;
   margin: 10px;
   margin-top: 20px;
   margin-left: 30px;
@@ -8,6 +8,8 @@ body {
 }
 
 #gameBoard {
+  border-radius: 25px;
+  border: 5px solid #424242;
   width: 800px;
   height: 600px;
   margin: auto;
@@ -42,6 +44,12 @@ body {
 .userChoiceImage {
   width: 120px;
   height: 120px;
+}
+
+.btn {
+  /* background: red; */
+  padding: 0px;
+  border-radius: 19px;
 }
 
 #rockChoice {
