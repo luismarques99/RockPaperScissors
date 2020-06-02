@@ -5,11 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
-    <h1>Rock Paper Scissors</h1>
+    <!-- <h1>Rock Paper Scissors</h1> -->
+
+    <div id="gameBoard" class="container">
+        <div id="serverChoice">
+            <img id="serverChoiceImage" src="images/question_mark.png" />
+        </div>
+        <div id="userChoices" class="row">
+            <div id="rockChoice" class="col-4 userChoiceDiv">
+                <img id="rockChoiceImage" class="userChoiceImage" src="images/rock.png" />
+            </div>
+            <div id="paperChoice" class="col-4 userChoiceDiv">
+                <img id="paperChoiceImage" class="userChoiceImage" src="images/paper.png" />
+            </div>
+            <div id="scissorsChoice" class="col-4 userChoiceDiv">
+                <img id="scissorsChoiceImage" class="userChoiceImage" src="images/scissors.png" />
+            </div>
+        </div>
+    </div>
 
     <script src="/app.js"></script>
 </body>

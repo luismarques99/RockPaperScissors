@@ -1,3 +1,53 @@
 body {
-  background: #b0bec5;
+  background: #e0e0e0;
+  margin: 10px;
+  margin-top: 20px;
+  margin-left: 30px;
+  color: #212121;
+  font-family: Bookman;
+}
+
+#gameBoard {
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  background: #757575;
+}
+
+#serverChoice {
+  /* background: red; */
+  margin: auto;
+  width: 350px;
+  height: 350px;
+}
+
+#serverChoiceImage {
+  /* border: 3px solid green; */
+  width: 300px;
+  height: 300px;
+  margin: 40px;
+  margin-left: 25px;
+}
+
+#userChoices {
+  /* background: red; */
+  margin-top: 75px;
+}
+
+.userChoiceDiv {
+  /* border: 5px solid yellow; */
+  text-align: center;
+}
+
+.userChoiceImage {
+  width: 120px;
+  height: 120px;
+}
+
+#rockChoice {
+  padding-left: 120px;
+}
+
+#scissorsChoice {
+  padding-right: 120px;
 }
