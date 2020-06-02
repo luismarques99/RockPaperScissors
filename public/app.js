@@ -18,24 +18,62 @@ function serverChoice() {
             break;
     }
     serverChoiceImage(srvChoice);
-    console.log(`The server chose ${srvChoice.toUpperCase()}`)
+    console.log(`SERVER chose ${srvChoice.toUpperCase()}`)
     return srvChoice;
 }
 
-function userChoice(choice) {
+function endMessage(user, server) {
+    const win = () => {
+        console.log('>>> You won!');
+        alert('You won!');
+    };
+    const loose = () => {
+        console.log('>>> You lost!');
+        alert('You lost!');
+    };
+    const draw = () => {
+        console.log(">>> It's a draw!");
+        alert("It's a draw!");
+    };
+    if (user === 'rock') {
+        if (server === 'rock') draw();
+        else if (server === 'paper') loose();
+        else win();
+    }
+    else if (user === 'paper') {
+        if (server === 'rock') win();
+        else if (server === 'paper') draw();
+        else loose();
+    } else {
+        if (server === 'rock') loose();
+        else if (server === 'paper') win();
+        else draw();
+    }
+}
+
+function game(choice) {
     const button = document.querySelector(`#${choice}Button`);
     button.addEventListener('click', (event) => {
-        // event.preventDefault();
-        console.log(`The user chose ${choice.toUpperCase()}`);
-        serverChoice();
+        console.log('\n\nNew Game:');
+        console.log(`USER chose ${choice.toUpperCase()}`);
+        // const srvChoice = serverChoice();
+        // endMessage(choice, srvChoice);
+        // FIXME: Alert is not waiting for the server choice image to load
+        const endMsg = async () => {
+            const srvChoice = await serverChoice();
+            endMessage(choice, srvChoice);
+        }
+        endMsg();
     });
 }
 
-function game() {
-    userChoice('rock');
-    userChoice('paper');
-    userChoice('scissors');
+function init() {
+    ['rock', 'paper', 'scissors'].forEach(option => game(option));
 }
+
+// function endMessage() {
+//     if()
+// }
 
 // function one() {
 //     console.log('The game has ended!');
@@ -44,9 +82,5 @@ function game() {
 // function two() {
 //     console.log('Do you want to restart?');
 // }
-
-function init() {
-    game();
-}
 
 init();
