@@ -11,7 +11,8 @@ body {
   border-radius: 25px;
   border: 5px solid #424242;
   width: 800px;
-  height: 600px;
+  height: auto;
+  padding-bottom: 30px;
   margin: auto;
   background: #757575;
 }
@@ -33,7 +34,7 @@ body {
 
 #userChoices {
   /* background: red; */
-  margin-top: 75px;
+  margin-top: 50px;
 }
 
 .userChoiceDiv {
@@ -58,4 +59,20 @@ body {
 
 #scissorsChoice {
   padding-right: 120px;
+}
+
+#title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Press Start 2P", cursive;
+}
+
+#gameMessage {
+  margin-top: 50px;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Vast Shadow', cursive;
+  font-size: 40px;
 }

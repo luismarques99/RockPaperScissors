@@ -22,18 +22,18 @@ function serverChoice() {
     return srvChoice;
 }
 
-function endMessage(user, server) {
+function endMessage(domElement, user, server) {
     const win = () => {
         console.log('>>> You won!');
-        alert('You won!');
+        domElement.innerHTML = '🥳 You won! 🥳';
     };
     const loose = () => {
         console.log('>>> You lost!');
-        alert('You lost!');
+        domElement.innerHTML = '😔 You lost! 😔';
     };
     const draw = () => {
         console.log(">>> It's a draw!");
-        alert("It's a draw!");
+        domElement.innerHTML = "😐 It's a draw! 😐";
     };
     if (user === 'rock') {
         if (server === 'rock') draw();
@@ -53,34 +53,20 @@ function endMessage(user, server) {
 
 function game(choice) {
     const button = document.querySelector(`#${choice}Button`);
+    const gameMessage = document.querySelector('#gameMessage');
     button.addEventListener('click', (event) => {
         console.log('\n\nNew Game:');
         console.log(`USER chose ${choice.toUpperCase()}`);
-        // const srvChoice = serverChoice();
-        // endMessage(choice, srvChoice);
-        // FIXME: Alert is not waiting for the server choice image to load
-        const endMsg = async () => {
-            const srvChoice = await serverChoice();
-            endMessage(choice, srvChoice);
-        }
-        endMsg();
+        endMessage(gameMessage, choice, serverChoice());
     });
 }
 
-function init() {
+const startGame = async () => {
     ['rock', 'paper', 'scissors'].forEach(option => game(option));
 }
 
-// function endMessage() {
-//     if()
-// }
-
-// function one() {
-//     console.log('The game has ended!');
-// }
-
-// function two() {
-//     console.log('Do you want to restart?');
-// }
+function init() {
+    startGame();
+}
 
 init();
