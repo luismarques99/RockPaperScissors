@@ -6,15 +6,6 @@ This is a web app for the **Rock Paper Scissors** game. Anyone can **install it*
 
 <img src="Rock_Paper_Scissors.png" alt="NewPassword" width="600"/>
 
-## Contents
-
-- [Requirements](#requirements)
-- [Instalation](#instalation)
-- [Run](#run)
-- [Built with](#built-with)
-- [License](#license)
-- [Author](#author)
-
 ## Requirements
 
 [`NodeJS`](https://nodejs.org/en/) - any version
