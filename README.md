@@ -1,10 +1,19 @@
 # :fist:Rock :hand:Paper :v:Scissors
 
-[`Play the game`](https://rock-paper-scissors-lm99.herokuapp.com/)
+[`Play the game`](https://rock-paper-scissors-lm99.herokuapp.com)
 
 This is a web app for the **Rock Paper Scissors** game. Anyone can **install it** and **play it**!
 
-<img src="Rock_Paper_Scissors.png" alt="NewPassword" width="600"/>
+[<img src="Rock_Paper_Scissors.png" alt="NewPassword" width="600"/>](https://rock-paper-scissors-lm99.herokuapp.com)
+
+## Contents
+
+- [Requirements](#requirements)
+- [Instalation](#instalation)
+- [Run](#run)
+- [Built with](#built-with)
+- [License](#license)
+- [Author](#author)
 
 ## Requirements
 
