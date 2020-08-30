@@ -18,14 +18,12 @@ body {
 }
 
 #serverChoice {
-  /* background: red; */
   margin: auto;
   width: 350px;
   height: 350px;
 }
 
 #serverChoiceImage {
-  /* border: 3px solid green; */
   width: 300px;
   height: 300px;
   margin: 40px;
@@ -33,12 +31,10 @@ body {
 }
 
 #userChoices {
-  /* background: red; */
   margin-top: 50px;
 }
 
 .userChoiceDiv {
-  /* border: 5px solid yellow; */
   text-align: center;
 }
 
@@ -48,7 +44,6 @@ body {
 }
 
 .btn {
-  /* background: red; */
   padding: 0px;
   border-radius: 19px;
 }

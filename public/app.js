@@ -1,6 +1,6 @@
 function serverChoiceImage(choice) {
     const serverImage = document.getElementById('serverChoiceImage');
-    serverImage.src = `images/${choice}.png`;
+    serverImage.src = `assets/${choice}.png`;
 }
 
 function serverChoice() {
